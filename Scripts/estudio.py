@@ -9,15 +9,8 @@ dataframe_2 = pd.read_csv("tablaEPA.csv")
 print(dataframe.info())
 
 print('--------------------------------------------')
-
+ 
 print(dataframe.head())
-
-#Eliminar filas desde 367 en adelante
-
-dataframe.drop(dataframe.index[365:], inplace=True)
-
-print(dataframe.info())
-
 
 
 # Asegurarse de que las fechas estén en formato datetime.
