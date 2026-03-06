@@ -1,3 +1,4 @@
+
 import pandas as pd 
 
 #Estudio Calidad de Aire
@@ -81,4 +82,4 @@ df['Categoria_AQI'] = df['AQI'].apply(categorizar_aqi)
 print(df[['City', 'Date', 'AQI', 'Categoria_AQI']].head())
 
 # Guardar a un nuevo CSV
-df.to_csv('city_air_quality_with_AQI.csv', index=False)
+df.to_csv('city_air_quality_AQI.csv', index=False)
